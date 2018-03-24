@@ -1,0 +1,23 @@
+
+
+<h1>{{tutorialObject.title}}</h1>
+<h2>{{tutorialObject.subTitle}}</h2>
+
+<p>Number: {{2 + 2}} </p>
+
+<p>String: {{tutorialObject.firstname + " " + tutorialObject.lastname | uppercase}} </p> <!--adding filter to expresion --->
+<p><b> Binding:{{tutorialObject.bindOutput |currency }}</b></p>
+
+<!-------------- two way data-binding -------->
+<label>firstname</label>
+<input ng-model="tutorialObject.firstname | uppercase"> <!-- adding filter to directive -->
+<br><br>
+<label>lastname</label>
+<input ng-model="tutorialObject.lastname | lowercase">
+<br><br>
+<button ng-click="timeTwo()">Multiple</button>
+<br><br>
+
+
+
+<a href="#/tutorialsec">tutorial second pages</a>
