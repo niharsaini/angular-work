@@ -19,7 +19,7 @@ $scope.timeTwo =function () {
 }
     }])
 //creating directives
-      .directive ("welcomemessage",function () {
+      .directive ("welcomemessage",function() {
           return{
               restrict : "E",
               template:"<div> nihar what's doing on</div>"
@@ -33,7 +33,7 @@ $scope.timeTwo =function () {
  .factory("cal",function () {
 
      var cal ={};
-     cal.timeTwo = function (a) {
+     cal.timeTwo = function(a) {
 
          return a * 2;
 
